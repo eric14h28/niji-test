@@ -1,0 +1,32 @@
+$btn--primary: $green-button, white, darken(#21b2a6, 10%), #fff;
+$btn--secondary: var(--color-text), white, darken(#2e3842, 5%), #fff;
+
+@mixin button($bg, $color, $hover, $icon) {
+  background-color: $bg;
+  color: $color;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  fill: $icon;
+  &:hover,
+  &:focus {
+    background: $hover;
+  }
+}
+
+.btn {
+  padding: 8px 24px;
+  font-size: 1em;
+  @include button($btn--primary...);
+  &.secondary {
+    @include button($btn--secondary...);
+  }
+}
+
+h1.header-title {
+  color: #fff;
+  font-size: 4rem;
+  display: inline-block;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
