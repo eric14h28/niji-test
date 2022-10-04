@@ -1,0 +1,13 @@
+// mixins pour le bloc-content et pouvoir changer la couleur du bloc et du texte/titre
+
+@mixin bloc-cotent-is-color ($bg-color: $grey-dark, $txt-color: #fff, $title-color: #fff, $title-border-color: rgba(155, 155, 155, 0.5)) {
+    background: $bg-color;
+    color: $txt-color;
+    padding: 4em 0;
+
+    .bloc-content__title {
+        color: $title-color;
+        border-bottom: 1px solid $title-border-color;
+        text-transform: uppercase;
+    }
+}

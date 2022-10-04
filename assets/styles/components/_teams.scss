@@ -1,0 +1,21 @@
+.teams {
+
+    &__inner {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+        }
+
+    }
+    &__image{
+        border-radius: 50%;
+    }
+
+    &__title{
+        margin: 15px 0;
+    }
+}

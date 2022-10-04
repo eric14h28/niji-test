@@ -1,5 +1,5 @@
-$btn--primary: $green-button, white, darken(#21b2a6, 10%), #fff;
-$btn--secondary: var(--color-text), white, darken(#2e3842, 5%), #fff;
+$btn--primary: $background-blue, white, darken($background-blue, 10%), #fff;
+$btn--secondary: $color-text, white, darken($grey-dark , 5%), #fff;
 
 @mixin button($bg, $color, $hover, $icon) {
   background-color: $bg;
@@ -21,12 +21,4 @@ $btn--secondary: var(--color-text), white, darken(#2e3842, 5%), #fff;
   &.secondary {
     @include button($btn--secondary...);
   }
-}
-
-h1.header-title {
-  color: #fff;
-  font-size: 4rem;
-  display: inline-block;
-  border-top: 3px solid #fff;
-  border-bottom: 3px solid #fff;
 }

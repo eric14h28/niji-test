@@ -1,0 +1,34 @@
+.bloc-content {
+    background: $background-blue;
+    color: #c8ece9;
+    text-align: center;
+    padding: 4em 0;
+
+    &__inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__title {
+        display: inline-block;
+        color: #c8ece9;
+        font-size: 2em;
+        margin: 0 0 15rem 0;
+        line-height: 1.75em;
+        font-weight: 800;
+        letter-spacing: 0.225em;
+        text-transform: uppercase;
+        padding: 0 2rem 1rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    }
+
+    // ajout d'une @mixin si on ajout plusieur couleurs encore.... 
+    &.is-dark {
+        @include bloc-cotent-is-color($grey-dark, #fff, #fff, rgba(155, 155, 155, 0.5))
+    }
+
+    &.is-white {
+        @include bloc-cotent-is-color($grey-lighter, black, black, rgba(155, 155, 155, 0.5))
+    }
+}
