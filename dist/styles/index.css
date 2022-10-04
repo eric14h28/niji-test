@@ -113,7 +113,7 @@ body {
 .form input,
 .form textarea {
   height: 38px;
-  line-height: 38px;
+  line-height: 1;
   background: #fff;
   border-radius: 4px;
   font-family: "Open Sans", sans-serif;
@@ -130,6 +130,7 @@ body {
 }
 .form textarea {
   height: 150px;
+  padding: 10px 0;
 }
 .form__btn {
   min-width: 200px;

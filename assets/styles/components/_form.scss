@@ -7,7 +7,7 @@
   input,
   textarea {
     height: 38px;
-    line-height: 38px;
+    line-height: 1;
     background: #fff;
     border-radius: 4px;
     font-family: "Open Sans", sans-serif;
@@ -25,6 +25,7 @@
 
   textarea {
     height: 150px;
+    padding: 10px 0;
   }
 
   &__btn {
