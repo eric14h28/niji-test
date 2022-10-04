@@ -1,0 +1,27 @@
+.nav-links {
+    display: flex;
+    position: relative;
+    margin-left: 32px;
+
+    .nav-link {
+        color: #ffffff;
+        margin: 0 8px;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-bottom: 2px solid;
+            transition: width 0.6s;
+        }
+
+        &:hover:after {
+            width: 100%;
+        }
+    }
+}

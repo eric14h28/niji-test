@@ -1,0 +1,37 @@
+{
+  "name": "Eric starter webpackmix",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "TAILWIND_MODE=build mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "npm run production",
+    "production": "mix --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^8.2.0",
+    "eslint-webpack-plugin": "^3.1.1",
+    "laravel-mix": "^6.0.39",
+    "laravel-mix-eslint": "^0.2.0",
+    "laravel-mix-polyfill": "^3.0.1",
+    "laravel-mix-tailwind": "^0.1.2",
+    "postcss": "^8.4.5",
+    "postcss-nested": "^5.0.6",
+    "precss": "^4.0.0",
+    "sass": "^1.45.0",
+    "sass-loader": "^12.4.0",
+    "toastr": "^2.1.4"
+  },
+  "dependencies": {
+  }
+}
